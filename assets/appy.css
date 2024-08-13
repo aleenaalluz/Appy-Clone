@@ -1,0 +1,197 @@
+/* overall styling  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    overflow-x: hidden!important;
+    padding: 0!important;
+    margin: 0!important;
+  }
+  .navbar{
+    background-color:  #0A0B27;
+  }
+  .roww-1{
+    display: flex;
+    align-items: center;
+    height: 600px;
+  
+  }
+  
+  /* redleaf rotation */
+  
+  .rotate-image{
+    width: 136px;
+    height: 372px;
+  
+  }
+  .hover:hover{
+    color: red !important;
+    transition: 0.4s;
+  }
+  .menuhover:hover{
+    color: #0A0B27 !important;
+    transition: 0.4s;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  @keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
+  
+  .rotate-on-scroll {
+    display: block; /* Ensure the element is displayed */
+    width: 136px;
+    height: 372px;
+    transition: transform 0.5s ease-out;
+  }
+  
+  
+  .roww-1 .rotating-head{
+    position: absolute;
+    top:center;
+    left: 18vw;
+    color: white;
+    text-align: center;
+    font-size: 80px!;
+    font-weight: 900;
+    font-family: "EksellDisplayWeb-Small";
+    z-index: 100;
+  }
+  
+  .description p{
+    padding: 30px;
+    font-size: 24px;
+    padding-bottom: 0px;
+    text-align: center;
+  }
+  .description span{
+    font-size: xx-large;
+  }
+  
+  .footernav img{
+    width: 20px;
+    height: 20px;
+  }
+  
+  .footernav a{
+    color: rgb(0, 0, 0);
+    padding-right: 10px;
+  }
+  .footernav{
+    width: 200px;
+    height: 52px;
+    display: flex;
+    margin-top: 20px;
+    padding: 0;
+  }
+  
+  .footernav img:hover{
+    width: 25px;
+    height: 25px;
+    transition: 0.4ms;
+    transform-style:preserve-3d;
+  }
+  address a{
+    text-decoration: none;
+  }
+  address span{
+    color: black;
+    font-weight: bold;
+  }
+  address span:hover{
+    color: red;
+    transition: 0.3s;
+  }
+  .footer {
+    margin:30px 30px 0px 30px;
+  }
+  
+  
+    /*---------media query--------*/
+    @media (min-width:1200px) 
+    {
+    .roww-1 .rotating-head
+      {
+        left: 19vw;    
+      }
+    .rotate-image{
+        width: 150px;
+        height: 250px;
+         right: 10%;
+    }
+    .topimg {
+      padding-top: 60px; /* Adjust for smaller screens */
+    } 
+  }
+  @media(max-width:1200px){
+    .description{
+        font-size: 15px;
+    }
+    .rotate-image{
+        width: 130px;
+        height: 230px;
+        right: 11%;
+    }
+    .topimg {
+      padding-top: 60px; /* Adjust for smaller screens */
+    } 
+  }
+  
+  @media (max-width:992px){
+    .rotate-image{
+        width: 120px;
+        height: 220px;
+        right: 9%;
+    }
+    .roww-1 .rotating-head{
+        left: 40vw;
+    }
+    .footer .row{
+        font-size: 20px;
+        padding: 50px;
+    }
+  }
+  @media (max-width:792px) {
+    .rotate-image{
+        width: 100px;
+        height: 200px;
+        right: 9.5%;
+    }
+    .roww-1 .rotating-head{
+        left: 40vw;
+    }
+    .topimg {
+      padding-top: 60px; /* Adjust for smaller screens */
+    } 
+  }
+  @media (max-width:576px){
+    .rotate-image img{
+        width: 60px;
+        height: 160px;
+      margin-right: 40px;
+    }
+    .roww-1 .rotating-head{
+        left: 35.5vw;
+        
+    }
+     .roww-1{
+        height: 400px;
+    }
+    .topimg {
+      min-height: 60px; /* Adjust for smaller screens */
+    }
+    img {
+      object-fit: contain; /* Change fit if needed */
+    } 
+  
+  }
+
+
